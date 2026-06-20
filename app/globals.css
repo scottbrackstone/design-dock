@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.18), transparent 32rem),
+    linear-gradient(135deg, #18181b 0%, #222018 42%, #111111 100%);
+  color: #f8fafc;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.editor-scrollbar {
+  scrollbar-color: rgba(161, 161, 170, 0.5) transparent;
+  scrollbar-width: thin;
+}
+
+.editor-scrollbar::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+.editor-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(161, 161, 170, 0.45);
+  border-radius: 999px;
+}
